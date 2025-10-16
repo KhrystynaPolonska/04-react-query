@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Movie } from '../types/movie';
 
-const VITE_TMDB_TOKEN = import.meta.env.VITE_TMDB_TOKEN;
+const VITE_TMDB_TOKEN = import.meta.env.VITE_TMDB_TOKEN as string;
 
 export interface FetchMoviesParams {
   query?: string;
