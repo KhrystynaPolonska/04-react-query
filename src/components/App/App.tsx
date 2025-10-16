@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
-import fetchMovies, { type FetchMoviesParams } from '../../services/movieService';
+import { fetchMovies, type FetchMoviesParams } from '../../services/movieService';
 import type { Movie } from '../../types/movie';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loader from '../Loader/Loader';
@@ -32,7 +32,6 @@ const App = () => {
   useEffect(() => {
     if (data?.results.length === 0) {
       toast('No movies found for your request.', {
-        icon: '😢',
         style: {
           borderRadius: '10px',
           background: '#ff9797ff',
