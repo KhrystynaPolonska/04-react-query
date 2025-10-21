@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
-import { fetchMovies, type FetchMoviesParams } from '../../services/movieService';
+
 import type { Movie } from '../../types/movie';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loader from '../Loader/Loader';
@@ -13,6 +13,7 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import ReactPaginate from 'react-paginate';
 
 import css from './App.module.css';
+import fetchMovies from '../../serviсes/movieService';
 
 const App = () => {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
