@@ -1,7 +1,7 @@
 import toast, { Toaster } from 'react-hot-toast';
 import type { FetchMoviesParams } from '../../serviсes/movieService';
 // import './SearchBar.module.css';
-import styles from './Searchbar.module.css';
+import styles from './SearchBar.module.css';
 
 interface SearchBarProps {
   onSubmit: (params: FetchMoviesParams) => void;
