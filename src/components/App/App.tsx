@@ -13,7 +13,7 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import ReactPaginate from 'react-paginate';
 
 import css from './App.module.css';
-import fetchMovies from '../../serviсes/movieService';
+import fetchMovies, { type FetchMoviesParams } from '../../serviсes/movieService';
 
 const App = () => {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
